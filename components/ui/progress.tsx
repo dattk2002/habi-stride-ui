@@ -1,0 +1,2 @@
+import { cn } from "@/lib/utils";
+export function Progress({ value = 0, className }: { value?: number; className?: string }) { return <div data-slot="progress" className={cn("h-2.5 overflow-hidden rounded-full bg-[rgba(96,108,56,.12)]", className)}><span className="block h-full rounded-full bg-[#8b9d83] transition-[width] duration-500" style={{ width: `${Math.max(0, Math.min(100, value))}%` }} /></div>; }

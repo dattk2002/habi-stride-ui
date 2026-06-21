@@ -1,4 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HabiStride UI
+
+Next.js application for HabiStride. The UI uses App Router, shadcn-style primitives, Lucide icons and the Quicksand font.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Set `NEXT_PUBLIC_GOOGLE_CLIENT_ID` in `.env.local` to the same OAuth 2.0 Web Client ID used by the API.
+
+The browser calls `/backend/*`; the Next.js route handler proxies requests to `API_INTERNAL_URL` (defaults to `http://localhost:3000`).
+
+## Routes
+
+- `/login`, `/register`
+- `/dashboard`, `/habits`, `/insights`, `/tree`, `/coach`, `/settings`
+
+## Docker
+
+Run from `habistride-nestjs-api`:
+
+```bash
+docker compose up -d --build
+```
+
+The UI is available at `http://localhost:3100`.
 
 ## Getting Started
 

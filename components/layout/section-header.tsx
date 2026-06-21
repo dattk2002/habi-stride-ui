@@ -1,0 +1,1 @@
+export function SectionHeader({ label, title, side }: { label: string; title: string; side?: React.ReactNode }) { return <div className="section-title"><div><span className="section-label">{label}</span><h2>{title}</h2></div>{side && <span>{side}</span>}</div>; }

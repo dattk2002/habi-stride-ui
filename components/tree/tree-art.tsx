@@ -1,0 +1,1 @@
+export function TreeArt({ stage, large }: { stage: number; large?: boolean }) { return <div className={`tree-art ${large ? "large" : ""} stage-${Math.min(stage, 4)}`} aria-label={`Cây cấp ${stage}`}><span className="trunk" />{[1, 2, 3, 4, 5].map(value => <i className={`leaf l${value}`} key={value} />)}<i className="ground" /></div>; }
