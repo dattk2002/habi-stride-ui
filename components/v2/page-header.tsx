@@ -1,0 +1,1 @@
+export function V2PageHeader({ eyebrow, title, description, action }: { eyebrow: string; title: string; description: string; action?: React.ReactNode }) { return <header className="v2-page-header" data-reveal><div><p className="v2-eyebrow">{eyebrow}</p><h1>{title}</h1><p>{description}</p></div>{action && <div className="v2-page-action">{action}</div>}</header>; }

@@ -1,0 +1,5 @@
+.loading{min-height:70vh;display:grid;place-items:center;align-content:center;gap:14px;color:var(--muted)}
+.mark{width:64px;height:64px;border-radius:23px;display:grid;place-items:center;background:color-mix(in srgb,var(--sage) 22%,transparent);color:var(--moss);animation:breathe 2s ease-in-out infinite}
+.mark svg{width:28px}.dots{display:flex;gap:5px}.dots i{width:6px;height:6px;border-radius:50%;background:var(--moss);animation:dot 1s infinite}.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}.loading p{font-size:.68rem;margin:0}
+@keyframes breathe{50%{transform:scale(1.07) rotate(3deg)}}@keyframes dot{50%{transform:translateY(-4px);opacity:.4}}
+@media(prefers-reduced-motion:reduce){.mark,.dots i{animation:none}}
