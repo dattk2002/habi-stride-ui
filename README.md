@@ -13,6 +13,8 @@ Set `NEXT_PUBLIC_GOOGLE_CLIENT_ID` in `.env.local` to the same OAuth 2.0 Web Cli
 
 The browser calls `/backend/*`; the Next.js route handler proxies requests to `API_INTERNAL_URL` (defaults to `http://localhost:3000`).
 
+On Render Free, set `API_INTERNAL_URL=https://habi-stride-api.onrender.com` on the UI service. The public URL is used because a Free Web Service cannot receive private-network traffic from another service.
+
 ## Routes
 
 - `/login`, `/register`
